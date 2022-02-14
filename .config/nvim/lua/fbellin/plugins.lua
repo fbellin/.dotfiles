@@ -47,6 +47,7 @@ return packer.startup(function(use)
 	use "nvim-lua/plenary.nvim"		-- Useful lua functions used in lots of plugins
 
 	-- My plugins here
+	use "fenetikm/falcon"
 	
 
 	-- Automatically set up your configuration after cloning packer.nvim
