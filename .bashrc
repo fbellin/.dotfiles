@@ -123,3 +123,21 @@ alias vi='nvim'
 
 # Rust configuration
 . "$HOME/.cargo/env"
+
+handle_symlink () {
+    if [[ ! -L ~/$1 ]]
+    then
+        echo "Create $1 symlink"
+        if [[ -f ~/$1 ]]
+        then
+            rm ~/$1
+        fi
+        ln -s .dotfiles/$1 ~/$1 
+    else
+        echo "Symlink OK"
+    fi
+}
+
+handle_symlink ".bashrc"
+handle_symlink ".dircolors"
+handle_symlink ".config"
