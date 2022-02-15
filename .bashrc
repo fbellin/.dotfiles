@@ -133,7 +133,6 @@ handle_symlink () {
             rm ~/$1
         fi
         ln -s .dotfiles/$1 ~/$1 
-    else
         echo "Symlink OK"
     fi
 }
