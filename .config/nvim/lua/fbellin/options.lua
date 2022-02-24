@@ -7,6 +7,8 @@ local options = {
 	tabstop = 4,
 	shiftwidth = 4,
 
+	swapfile = false,
+
 	splitright = true,
 	splitbelow = true,
 

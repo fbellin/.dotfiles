@@ -54,16 +54,30 @@ return packer.startup(function(use)
 	use "hrsh7th/cmp-buffer"		-- buffer commpletions
 	use "hrsh7th/cmp-path"			-- path completions
 	use "hrsh7th/cmp-cmdline"		-- command line completions
+	use "hrsh7th/cmp-nvim-lsp"		-- completion from lsp
+	use "hrsh7th/cmp-nvim-lua"		-- completion from nvim api in lua (ie: get vim.* in completion)
 	use "saadparwaiz1/cmp_luasnip"  -- snippet completions
 
 	-- Snippets plugins
 	use "L3MON4D3/LuaSnip"				-- Snippet engine plugin
 	use "rafamadriz/friendly-snippets"	-- a bunch of snippets
-	
+
+	-- Language Server Protocol (LSP) plugins
+	use "neovim/nvim-lspconfig"				-- Main neovim LSP plugin
+	use "williamboman/nvim-lsp-installer"	-- User-friendly language installer for LSP
+
+	-- Telescop fuzzy fnder
+	use "nvim-telescope/telescope.nvim"
+
+	-- Tree sitter
+	use {
+		"nvim-treesitter/nvim-treesitter",
+		run = ":TSUpdate",
+	}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
 end)
-

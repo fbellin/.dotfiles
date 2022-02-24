@@ -8,7 +8,7 @@
 
 local opts = { noremap = true, silent = true }
 
--- Shorten function name 
+-- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
 -- Remap space as leader key
@@ -48,3 +48,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Improves yank/paste handling
 keymap("v", "p", '"_dP', opts)
 
+-- Telescope keymaps
+-- keymap("n", "<c-f>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = 10 }))<cr>", opts)
+keymap("n", "<C-f>", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)

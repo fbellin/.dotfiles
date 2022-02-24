@@ -3,4 +3,6 @@ require "fbellin.keymaps"
 require "fbellin.plugins"
 require "fbellin.colorschemes"
 require "fbellin.completions"
-
+require "fbellin.lsp"
+require "fbellin.telescope"
+require "fbellin.treesitter"
