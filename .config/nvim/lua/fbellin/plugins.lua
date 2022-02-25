@@ -81,8 +81,9 @@ return packer.startup(function(use)
 	-- Git
 	use "lewis6991/gitsigns.nvim"
 
-	-- Comments
+	-- Comments and autopairs
 	use "numToStr/Comment.nvim"
+	use "windwp/nvim-autopairs"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
