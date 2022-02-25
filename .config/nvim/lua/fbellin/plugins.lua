@@ -75,6 +75,12 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	}
 
+	-- Airline
+	use "vim-airline/vim-airline"     -- used for falcon theme
+
+	-- Git
+	use "lewis6991/gitsigns.nvim"
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then
