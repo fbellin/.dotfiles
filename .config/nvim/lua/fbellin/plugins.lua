@@ -85,6 +85,10 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim"
 	use "windwp/nvim-autopairs"
 
+	-- Tabs and buffer line
+	use "kyazdani42/nvim-web-devicons"
+	use "akinsho/bufferline.nvim"
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then
