@@ -45,6 +45,7 @@ return packer.startup(function(use)
 	use "wbthomason/packer.nvim"
 	use "nvim-lua/popup.nvim"		-- An implementation of the popup API from vim in Neovim
 	use "nvim-lua/plenary.nvim"		-- Useful lua functions used in lots of plugins
+	use "stevearc/dressing.nvim"	-- Window visual rendering
 
 	-- Themes and color scheme management
 	use "fenetikm/falcon"
@@ -85,11 +86,8 @@ return packer.startup(function(use)
 	use "numToStr/Comment.nvim"
 	use "windwp/nvim-autopairs"
 
-	-- Tabs and buffer line
-	use "kyazdani42/nvim-web-devicons"
-	use "akinsho/bufferline.nvim"
-
 	-- File explorer
+	use "kyazdani42/nvim-web-devicons"
 	use "kyazdani42/nvim-tree.lua"
 
 	-- Automatically set up your configuration after cloning packer.nvim
