@@ -57,3 +57,8 @@ keymap("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)
 -- nvim tree file explorer
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-r>", ":NvimTreeRefresh<CR>", opts)
+
+-- Git
+keymap("n", "<leader>d", ":DiffviewOpen<CR>", opts)
+keymap("n", "<leader>h", ":DiffviewFileHistory<CR>", opts)
+keymap("n", "<leader>c", ":DiffviewClose<CR>", opts)
