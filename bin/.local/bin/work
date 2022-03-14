@@ -1,0 +1,16 @@
+#! /bin/bash
+
+#--------------------------------------------
+# Checks arguments
+
+if [[ $# -eq 1 ]]; then
+    path=$1
+else
+    echo "Should be 1 argument: full path of directory to open in a tmux session"
+    exit 1
+fi
+
+#--------------------------------------------
+# Starts work environment
+
+~/.my-config/scripts/tmuxify $path

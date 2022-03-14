@@ -124,23 +124,8 @@ alias vi='nvim'
 # Rust configuration
 . "$HOME/.cargo/env"
 
-handle_symlink () {
-    if [[ ! -L ~/$1 ]]
-    then
-        echo "Create $1 symlink"
-        if [[ -f ~/$1 ]]
-        then
-            rm ~/$1
-        fi
-        ln -s .dotfiles/$1 ~/$1 
-        echo "Symlink OK"
-    fi
-}
-
-handle_symlink ".bashrc"
-handle_symlink ".dircolors"
-handle_symlink ".config"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:$HOME/.local/bin/
