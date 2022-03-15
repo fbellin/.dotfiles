@@ -6,24 +6,19 @@
 if [[ $# -eq 1 ]]; then
     path=$1
 else
-    echo "Should be 1 argument: full path of directory to open in a tmux session"
+    echo "Should be 1 argument: full path of directory to run in a tmux session"
     exit 1
 fi
 
 #--------------------------------------------
 # Starts tmux session
 
-tmux_pid=$(pgrep -x tmux)
-if [[ -z $TMUX ]] && [[ -z $tmux_pid ]]; then
-    name=$(basename $path)
-    if ! tmux has-session -t $name; then
-        tmux new-session -s $name -n code -c $path -d 'nvim'
-		tmux new-window -n term -c $path
-    fi
-else
-    echo "tmux seems to be running with pid $tmux_pid. You should try to attach to an existing session instead of creating a new one."
-    echo `ps -ef | grep tmux`
-    exit 1
+name=$(basename $path | tr . "\0")
+
+if ! tmux has-session -t=$name 2>/dev/null; then
+	tmux new-session -s $name -n code -c $path -d nvim
+	tmux attach -t $name
+	tmux new-window -t $name -n term -c $path
 fi
 
-tmux attach-session -t $name
+tmux switch-client -t $name:code
