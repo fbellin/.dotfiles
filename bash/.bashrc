@@ -130,4 +130,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:$HOME/.local/bin/
 
-set -o vi
+bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
+bind '"\eOQ":"tmuxify ~/sources/gitlab.vinci.com/bimpp/core/\n"'
+bind '"\eOR":"tmuxify ~/sources/no-git/rust/training/\n"'

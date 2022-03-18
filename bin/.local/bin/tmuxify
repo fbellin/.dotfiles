@@ -13,12 +13,12 @@ fi
 #--------------------------------------------
 # Starts tmux session
 
-name=$(basename $path | tr . "\0")
+name=$(basename $path | sed 's/^\.//')
 
 if ! tmux has-session -t=$name 2>/dev/null; then
 	tmux new-session -s $name -n code -c $path -d nvim
-	tmux attach -t $name
 	tmux new-window -t $name -n term -c $path
+	tmux attach -t $name:code
 fi
 
 tmux switch-client -t $name:code
