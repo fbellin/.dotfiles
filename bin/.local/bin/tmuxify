@@ -21,4 +21,4 @@ if ! tmux has-session -t=$name 2>/dev/null; then
 	tmux attach -t $name:code
 fi
 
-tmux switch-client -t $name:code
+tmux switch-client -t $name:code 2>/dev/null || tmux attach -t $name:code 2>/dev/null
