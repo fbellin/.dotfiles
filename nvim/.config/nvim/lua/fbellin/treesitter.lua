@@ -5,7 +5,7 @@ end
 
 -- local configs = require("nvim-treesitter.configs")
 configs.setup {
-	ensure_installed = "maintained",
+	ensure_installed = { "javascript", "python", "rust" },
 	sync_install = false,
 	ignore_install = { "" },
 	autopairs = {

@@ -17,5 +17,5 @@ function switcher(opts)
   end)
 end
 
-vim.api.nvim_add_user_command('BufferSwitcher', switcher, {})
+vim.api.nvim_create_user_command('BufferSwitcher', switcher, {})
 

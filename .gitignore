@@ -1,1 +1,3 @@
 nvim/.config/nvim/plugin
+bin/.local/share
+bin/.local/state
