@@ -24,3 +24,5 @@
   added = green
   changed = yellow
   untracked = magenta
+[credential]
+	helper = store --file ~/.gitcredentials
