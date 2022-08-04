@@ -130,6 +130,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:$HOME/.local/bin/
 
+source ./.exa_colors
+
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
-bind '"\eOQ":"tmuxify ~/sources/gitlab.vinci.com/bimpp/core/\n"'
+bind '"\eOQ":"tmuxify ~/src/github.com/app-stack/\n"'
 bind '"\eOR":"tmuxify ~/sources/no-git/rust/training/\n"'
