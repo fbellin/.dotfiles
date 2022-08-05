@@ -121,6 +121,9 @@ fi
 # Aliases
 alias vi='nvim'
 
+# dircolors for ls ?
+test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)"
+
 # Rust configuration
 . "$HOME/.cargo/env"
 
