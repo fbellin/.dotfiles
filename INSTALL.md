@@ -50,6 +50,14 @@ TODO : check if there is an error : I thought I was using Packer and not vim-plu
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+## Docker configuration after Docker for Windows installation
+
+Without the following, docker must be run with sudo in WSL2.
+
+```bash
+sudo usermod -aG docker $USER
+```
+
 ## Miscellaneous topics which may not be considered
 
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe"
