@@ -3,8 +3,9 @@
 I keep in this file solutions to various installations steps or problems I had to get my environment running smoothly. All of the following is done in the context of a fresh Ubuntu LTS (16.01) installation on WSL2.
 
 ## Main tools installation
-sudo apt update
-sudo apt install neovim stow net-tools
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt install neovim stow net-tools lua5.3 gcc g++
 
 wget -c http://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
 sudo apt-get install ./exa_0.9.0-4_amd64.deb
@@ -15,6 +16,7 @@ git clone https://github.com/fbellin/.dotfiles.git
 
 cd
 mv .bashrc .bashrc.old
+cd .dotfiles
 stow bash
 stow bin
 stow nvim
@@ -53,3 +55,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe"
 
 sudo apt install libnss3-tools
+
