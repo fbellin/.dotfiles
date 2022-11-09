@@ -137,4 +137,5 @@ source ./.exa_colors
 
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
 bind '"\eOQ":"tmuxify ~/src/github.com/app-stack/\n"'
-bind '"\eOR":"tmuxify ~/sources/no-git/rust/training/\n"'
+bind '"\eOR":"tmuxify ~/src/github.com/sdml/\n"'
+#bind '"\eOR":"tmuxify ~/sources/no-git/rust/training/\n"'
