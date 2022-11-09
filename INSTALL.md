@@ -38,6 +38,11 @@ Installer les serveurs suivants :
 - eslint
 - svelte
 
+## Node installation
+
+Beware of the release you install with this command. You should check [installation instructions](https://github.com/nvm-sh/nvm#installing-and-updating)
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
 ## Rust install
 
 sudo apt install build-essential
