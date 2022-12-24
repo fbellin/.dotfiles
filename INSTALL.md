@@ -5,7 +5,7 @@ I keep in this file solutions to various installations steps or problems I had t
 ## Main tools installation
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
-sudo apt install neovim stow net-tools lua5.3 gcc g++
+sudo apt install neovim stow net-tools lua5.3 gcc g++ unzip
 
 wget -c http://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
 sudo apt-get install ./exa_0.9.0-4_amd64.deb
@@ -42,6 +42,10 @@ Installer les serveurs suivants :
 
 Beware of the release you install with this command. You should check [installation instructions](https://github.com/nvm-sh/nvm#installing-and-updating)
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+Then :
+
+nvm install stable
 
 ## Rust install
 
