@@ -3,7 +3,7 @@ local options = {
 	number = true,
 
 	termguicolors = true,
-	
+
 	tabstop = 4,
 	shiftwidth = 4,
 	signcolumn = "yes:2",

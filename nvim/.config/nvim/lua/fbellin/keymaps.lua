@@ -62,3 +62,16 @@ keymap("n", "<C-r>", ":NvimTreeRefresh<CR>", opts)
 keymap("n", "<leader>d", ":DiffviewOpen<CR>", opts)
 keymap("n", "<leader>h", ":DiffviewFileHistory<CR>", opts)
 keymap("n", "<leader>c", ":DiffviewClose<CR>", opts)
+
+-- Debugging
+keymap("n", "<leader>dd", ":call vimspector#Launch()<CR>", opts)
+keymap("n", "<leader>de", ":call vimspector#Reset()<CR>", opts)
+keymap("n", "<leader>dc", ":call vimspector#Continue()<CR>", opts)
+
+keymap("n", "<leader>dt", ":call vimspector#ToggleBreakpoint()<CR>", opts)
+keymap("n", "<leader>dT", ":call vimspector#ClearBreakpoints()<CR>", opts)
+
+keymap("n", "<leader>dk", ":call vimspector#Restart()<CR>", opts)
+keymap("n", "<leader>dh", ":call vimspector#StepOut()<CR>", opts)
+keymap("n", "<leader>dl", ":call vimspector#StepInto()<CR>", opts)
+keymap("n", "<leader>dj", ":call vimspector#StepOver()<CR>", opts)
