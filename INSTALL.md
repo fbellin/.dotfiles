@@ -4,7 +4,9 @@ I keep in this file solutions to various installations steps or problems I had t
 
 ## Main tools installation
 sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt-get update
+sudo apt-get upgrade
 sudo apt install neovim stow net-tools lua5.3 gcc g++ unzip
 
 wget -c http://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
