@@ -7,7 +7,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt install neovim stow net-tools lua5.3 gcc g++ unzip
+sudo apt install neovim stow net-tools lua5.3 gcc g++ unzip python3-pip
 
 wget -c http://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
 sudo apt-get install ./exa_0.9.0-4_amd64.deb
@@ -32,6 +32,7 @@ vi
 :PackerUpdate
 :LspInstallInfo
 :LspInstall
+:VimspectorInstall vscode-node-debug2
 
 Installer les serveurs suivants :
 - sumneko_lua
@@ -56,10 +57,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ## Pugin manager for neovim 
 
-TODO : check if there is an error : I thought I was using Packer and not vim-plug
-
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+git clone https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
 
 ## Docker configuration after Docker for Windows installation
 
