@@ -91,6 +91,9 @@ return packer.startup(function(use)
 	use "kyazdani42/nvim-web-devicons"
 	use "kyazdani42/nvim-tree.lua"
 
+	-- Debugging
+	use "puremourning/vimspector"
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then

@@ -198,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
+  },
+  vimspector = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vimspector",
+    url = "https://github.com/puremourning/vimspector"
   }
 }
 
