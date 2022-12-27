@@ -51,7 +51,7 @@ keymap("v", "p", '"_dP', opts)
 
 -- Telescope keymaps
 -- keymap("n", "<c-f>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = 10 }))<cr>", opts)
-keymap("n", "<C-f>", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<C-f>", "<cmd>Telescope find_files hidden=true<cr>", opts)
 keymap("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- nvim tree file explorer
