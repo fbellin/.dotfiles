@@ -18,9 +18,9 @@ lsp_installer.on_server_ready(function(server)
 	--	opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
 	-- end
 
-	if server.name == "sumneko_lua" then
-		local sumneko_opts = require("fbellin.lsp.settings.sumneko_lua")
-		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+	if server.name == "luals_lua_lua" then
+		local luals_opts = require("fbellin.lsp.settings.luals_lua")
+		opts = vim.tbl_deep_extend("force", luals_opts, opts)
 	end
 
 	if server.name == "pyright" then

@@ -11,24 +11,23 @@ if not config_status_ok then
   return
 end
 
+local api_status_ok, nvim_tree_api = pcall(require, "nvim-tree.api")
+if not api_status_ok then
+	return
+end
+
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
-  open_on_setup = true,
-  ignore_ft_on_setup = {
-    "startify",
-    "dashboard",
-    "alpha",
-  },
-  open_on_tab = false,
+--  ignore_ft_on_setup = {
+--    "startify",
+--    "dashboard",
+--    "alpha",
+--  },
   hijack_cursor = false,
   update_cwd = true,
---  update_to_buf_dir = {
---   enable = true,
---    auto_open = true,
---  },
   diagnostics = {
     enable = true,
     icons = {
@@ -50,10 +49,8 @@ nvim_tree.setup {
   },
   view = {
     width = 30,
-    --height = 30,
     hide_root_folder = false,
     side = "left",
- --   auto_resize = true,
     mappings = {
       custom_only = false,
       list = {
@@ -70,8 +67,7 @@ nvim_tree.setup {
       window_picker = {
         enable = false,
       },
-	  	quit_on_open = false,
-	  },
+    },
   },
   renderer = {
     root_folder_modifier = ":t",
@@ -106,3 +102,9 @@ nvim_tree.setup {
   },
 
 }
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { 
+	callback = function()
+		nvim_tree_api.tree.open()
+	end
+})
