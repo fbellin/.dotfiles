@@ -65,7 +65,9 @@ return packer.startup(function(use)
 
 	-- Language Server Protocol (LSP) plugins
 	use "neovim/nvim-lspconfig"				-- Main neovim LSP plugin
-	use "williamboman/nvim-lsp-installer"	-- User-friendly language installer for LSP
+	-- use "williamboman/nvim-lsp-installer"	-- User-friendly language installer for LSP
+	use "williamboman/mason.nvim"
+	use "williamboman/mason-lspconfig.nvim"
 
 	-- Telescop fuzzy fnder
 	use "nvim-telescope/telescope.nvim"
