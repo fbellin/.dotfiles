@@ -94,6 +94,10 @@ return packer.startup(function(use)
 	-- Debugging
 	use "puremourning/vimspector"
 
+	-- Svelte IDE
+	use "yuezk/vim-js"
+	use "evanleck/vim-svelte"
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then

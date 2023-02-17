@@ -199,6 +199,16 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
+  ["vim-js"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-js",
+    url = "https://github.com/yuezk/vim-js"
+  },
+  ["vim-svelte"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-svelte",
+    url = "https://github.com/evanleck/vim-svelte"
+  },
   vimspector = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vimspector",
