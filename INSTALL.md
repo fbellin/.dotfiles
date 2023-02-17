@@ -62,6 +62,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
 
+Install vimspector plugins : vscode-node-debug2
+
 ## Docker configuration after Docker for Windows installation
 
 Without the following, docker must be run with sudo in WSL2.
