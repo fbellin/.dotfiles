@@ -1,4 +1,7 @@
 nvim/.config/nvim/plugin
 bin/.local/share
 bin/.local/state
+bin/.local/include
+bin/.local/lib
 nvim/.config/wslu
+
