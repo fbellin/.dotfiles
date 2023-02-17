@@ -16,7 +16,7 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"pyright",
 		"tsserver",
-		"svelte-language-server"
+		"svelte"
 	}
 })
 
