@@ -12,6 +12,8 @@ sudo apt install neovim stow net-tools lua5.3 gcc g++ unzip python3-pip fd-find
 wget -c http://old-releases.ubuntu.com/ubuntu/pool/universe/r/rust-exa/exa_0.9.0-4_amd64.deb
 sudo apt-get install ./exa_0.9.0-4_amd64.deb
 
+pip3 install neovim
+
 ln -s $(which fdfind) ~/.local/bin/fd
 
 ## dotfiles download and setup (with stow)
