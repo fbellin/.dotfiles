@@ -50,55 +50,17 @@ return packer.startup(function(use)
 	-- Themes and color scheme management
 	use "fenetikm/falcon"
 
-	-- Completion plugins
-	use "hrsh7th/nvim-cmp"			-- The completion plugin
-	use "hrsh7th/cmp-buffer"		-- buffer commpletions
-	use "hrsh7th/cmp-path"			-- path completions
-	use "hrsh7th/cmp-cmdline"		-- command line completions
-	use "hrsh7th/cmp-nvim-lsp"		-- completion from lsp
-	use "hrsh7th/cmp-nvim-lua"		-- completion from nvim api in lua (ie: get vim.* in completion)
-	use "saadparwaiz1/cmp_luasnip"  -- snippet completions
-
-	-- Snippets plugins
-	use "L3MON4D3/LuaSnip"				-- Snippet engine plugin
-	use "rafamadriz/friendly-snippets"	-- a bunch of snippets
-
-	-- Language Server Protocol (LSP) plugins
-	use "neovim/nvim-lspconfig"				-- Main neovim LSP plugin
-	-- use "williamboman/nvim-lsp-installer"	-- User-friendly language installer for LSP
-	use "williamboman/mason.nvim"
-	use "williamboman/mason-lspconfig.nvim"
-
-	-- Telescop fuzzy fnder
-	use "nvim-telescope/telescope.nvim"
-
-	-- Tree sitter
-	use {
-		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
-	}
-
 	-- Airline
 	use "vim-airline/vim-airline"     -- used for falcon theme
 
-	-- Git
-	use "lewis6991/gitsigns.nvim"
-	use "sindrets/diffview.nvim"
-
-	-- Comments and autopairs
-	use "numToStr/Comment.nvim"
-	use "windwp/nvim-autopairs"
-
-	-- File explorer
-	use "kyazdani42/nvim-web-devicons"
-	use "kyazdani42/nvim-tree.lua"
-
-	-- Debugging
-	use "puremourning/vimspector"
-
-	-- Svelte IDE
-	use "yuezk/vim-js"
-	use "evanleck/vim-svelte"
+	-- Nvim tree
+	use {
+		'nvim-tree/nvim-tree.lua',
+  		requires = {
+    		'nvim-tree/nvim-web-devicons', -- optional
+  		},
+		}
+	
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
