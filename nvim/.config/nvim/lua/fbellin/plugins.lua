@@ -67,6 +67,11 @@ return packer.startup(function(use)
 		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
 	}
 
+	-- Svelte IDE
+	use "pangloss/vim-javascript"
+	use "othree/html5.vim"
+	use "evanleck/vim-svelte"
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then
