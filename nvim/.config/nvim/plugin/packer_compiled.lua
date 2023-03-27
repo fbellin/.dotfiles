@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/falcon",
     url = "https://github.com/fenetikm/falcon"
   },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

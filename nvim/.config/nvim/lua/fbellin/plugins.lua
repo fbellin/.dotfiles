@@ -60,7 +60,12 @@ return packer.startup(function(use)
     		'nvim-tree/nvim-web-devicons', -- optional
   		},
 		}
-	
+
+	-- Mason
+	use {
+		"williamboman/mason.nvim",
+		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
+	}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
