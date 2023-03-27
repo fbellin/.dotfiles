@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
   },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
+  },
   ["vim-javascript"] = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-javascript",

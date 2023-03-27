@@ -24,6 +24,8 @@ local options = {
 
 	clipboard = "unnamedplus",
 	mouse = "a",
+
+	updatetime = 500
 }
 
 for k, v in pairs(globals) do 

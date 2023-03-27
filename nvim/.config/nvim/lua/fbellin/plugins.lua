@@ -67,6 +67,9 @@ return packer.startup(function(use)
 		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
 	}
 
+	-- Git
+	use "airblade/vim-gitgutter"
+
 	-- Svelte IDE
 	use "pangloss/vim-javascript"
 	use "othree/html5.vim"
