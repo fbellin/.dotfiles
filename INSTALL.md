@@ -30,20 +30,16 @@ stow tmux
 stow exa
 stow git
 
+## Plugin manager for neovim
+
+git clone https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
+
 ## Neovim configuration
 
 vi
 :PackerUpdate
-:LspInstallInfo
-:LspInstall
-:VimspectorInstall vscode-node-debug2
-
-Installer les serveurs suivants :
-- sumneko_lua
-- pyright
-- rust_analyzer
-- eslint
-- svelte
+:MasonInstall lua_language_server svelte_language_server prettier
 
 ## Node installation
 
@@ -58,13 +54,6 @@ nvm install stable
 
 sudo apt install build-essential
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-## Pugin manager for neovim 
-
-git clone https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
-
-Install vimspector plugins : vscode-node-debug2
 
 ## Docker configuration after Docker for Windows installation
 

@@ -2,6 +2,7 @@ local globals = {
 
 	gitgutter_sign_added 		= "►",
 	gitgutter_sign_modified = "►",
+	gitgutter_sign_modified_removed = "►_",
 	gitgutter_sign_removed	= "►"
 
 }
