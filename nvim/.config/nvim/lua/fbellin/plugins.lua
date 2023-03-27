@@ -67,6 +67,10 @@ return packer.startup(function(use)
 		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
 	}
 
+	-- Treesitter and auto pairs plugins
+	use { "nvim-treesitter/nvim-treesitter" }
+	use { "windwp/nvim-autopairs" }
+
 	-- Git
 	use "airblade/vim-gitgutter"
 
