@@ -84,16 +84,6 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/falcon",
     url = "https://github.com/fenetikm/falcon"
   },
-  ["html5.vim"] = {
-    loaded = true,
-    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/html5.vim",
-    url = "https://github.com/othree/html5.vim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -103,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -138,16 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
-  },
-  ["vim-javascript"] = {
-    loaded = true,
-    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-javascript",
-    url = "https://github.com/pangloss/vim-javascript"
-  },
-  ["vim-svelte"] = {
-    loaded = true,
-    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-svelte",
-    url = "https://github.com/evanleck/vim-svelte"
   }
 }
 

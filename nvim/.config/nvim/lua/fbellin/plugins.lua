@@ -61,23 +61,11 @@ return packer.startup(function(use)
   		},
 		}
 
-	-- Mason
-	use {
-		"williamboman/mason.nvim",
-		run = ":MasonUpdate" -- :MasonUpdate updates registry contents
-	}
-
-	-- Treesitter and auto pairs plugins
-	use { "nvim-treesitter/nvim-treesitter" }
+	-- Auto pairs plugins
 	use { "windwp/nvim-autopairs" }
 
 	-- Git
 	use "airblade/vim-gitgutter"
-
-	-- Svelte IDE
-	use "pangloss/vim-javascript"
-	use "othree/html5.vim"
-	use "evanleck/vim-svelte"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
