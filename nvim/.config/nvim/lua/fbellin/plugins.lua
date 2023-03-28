@@ -67,6 +67,14 @@ return packer.startup(function(use)
 	-- Git
 	use "airblade/vim-gitgutter"
 
+	-- LSP and related plugins
+	use { "neovim/nvim-lspconfig" }
+	use { "williamboman/mason.nvim" }
+	use { "williamboman/mason-lspconfig.nvim" }
+	use { "jose-elias-alvarez/null-ls.nvim" }
+	use { "hrsh7th/nvim-cmp" }
+	use { "hrsh7th/cmp-nvim-lsp" }
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then
