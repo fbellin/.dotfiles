@@ -67,6 +67,11 @@ return packer.startup(function(use)
 	-- Git
 	use "airblade/vim-gitgutter"
 
+	-- Telescope
+	use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.1'
+	}
+
 	-- LSP and related plugins
 	use { "neovim/nvim-lspconfig" }
 	use { "williamboman/mason.nvim" }

@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-airline",

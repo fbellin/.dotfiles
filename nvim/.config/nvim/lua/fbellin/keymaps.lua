@@ -49,5 +49,3 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Improves yank/paste handling
 keymap("v", "p", '"_dP', opts)
 
--- Toggles NvimTree
-keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
