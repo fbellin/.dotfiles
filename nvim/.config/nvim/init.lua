@@ -7,4 +7,5 @@ require "fbellin.gitgutter"
 require "fbellin.autopairs"
 require "fbellin.mason"
 require "fbellin.telescope"
-require "fbellin.lazygit"
+require "fbellin.diffview"
+

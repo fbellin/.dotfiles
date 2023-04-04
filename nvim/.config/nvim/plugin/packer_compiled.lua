@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["dressing.nvim"] = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/dressing.nvim",
@@ -88,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/falcon",
     url = "https://github.com/fenetikm/falcon"
-  },
-  ["lazygit.nvim"] = {
-    loaded = true,
-    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
-    url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
