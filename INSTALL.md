@@ -18,6 +18,7 @@ ln -s $(which fdfind) ~/.local/bin/fd
 
 ## dotfiles download and setup (with stow)
 
+git config --global init.defaultBranch main
 git clone https://github.com/fbellin/.dotfiles.git
 
 cd

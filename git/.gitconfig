@@ -26,3 +26,5 @@
   untracked = magenta
 [credential]
 	helper = store --file ~/.gitcredentials
+[init]
+	defaultBranch = main
