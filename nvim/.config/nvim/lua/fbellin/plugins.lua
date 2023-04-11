@@ -61,8 +61,11 @@ return packer.startup(function(use)
   		},
 		}
 
-	-- Auto pairs plugins
+	-- Auto pairs plugin
 	use { "windwp/nvim-autopairs" }
+
+	-- Comments plugin
+	use { "terrortylor/nvim-comment" }
 
 	-- Git
 	use "airblade/vim-gitgutter"

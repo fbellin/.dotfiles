@@ -8,4 +8,4 @@ require "fbellin.autopairs"
 require "fbellin.mason"
 require "fbellin.telescope"
 require "fbellin.diffview"
-
+require "fbellin.comment"
