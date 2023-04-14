@@ -45,7 +45,8 @@ end
 -- Language servers configuration
 local servers = {
 	denols = {},
-	svelte = {}
+	svelte = {},
+	lua_ls = {}
 }
 
 -- Glues everything in mason configuration
