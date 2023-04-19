@@ -1,5 +1,5 @@
 local status_ok, cmp = pcall(require, 'cmp')
-if not local_status then
+if not status_ok then
 	vim.notify("Error while loading cmp plugin")
 end
 
