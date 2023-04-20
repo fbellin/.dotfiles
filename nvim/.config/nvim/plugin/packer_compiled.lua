@@ -183,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  vimspector = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/vimspector",
+    url = "https://github.com/puremourning/vimspector"
   }
 }
 

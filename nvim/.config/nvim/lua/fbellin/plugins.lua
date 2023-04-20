@@ -87,6 +87,9 @@ return packer.startup(function(use)
 	use { "hrsh7th/cmp-path" }
 	use { "hrsh7th/cmp-cmdline" }
 
+	-- Debugging features
+	use { "puremourning/vimspector" }
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Keep this at the end afeter all plugins
 	if PACKER_BOOTSTRAP then
