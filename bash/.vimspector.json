@@ -1,0 +1,19 @@
+{
+  "configurations": {
+    "deno": {
+      "adapter": "vscode-node",
+			"filetypes": [ "javascript" ],
+      "configuration": {
+        "request": "launch",
+        "protocol": "auto",
+        "stopOnEntry": true,
+        "console": "integratedTerminal",
+				"runtimeExecutable": "~/.deno/bin/deno",
+				"runtimeArgs": [ "run", "--inspect-brk=127.0.0.1:9229" ],
+        "program": "${file}",
+        "cwd": "${workspaceRoot}",
+				"port": 9229
+      }
+		}
+  }
+}
