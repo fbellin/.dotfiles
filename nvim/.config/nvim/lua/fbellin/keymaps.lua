@@ -6,10 +6,12 @@
 -- 	t : terminal mode
 -- 	c : command mode
 
-local opts = { noremap = true, silent = true }
+-- local opts = { noremap = true, silent = true }
 
 -- Shorten function name
-local keymap = vim.api.nvim_set_keymap
+-- local keymap = vim.api.nvim_set_keymap
+--
+local keymap, opts = require "utils".setup()
 
 -- Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)

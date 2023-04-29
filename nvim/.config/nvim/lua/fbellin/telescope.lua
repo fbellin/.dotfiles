@@ -11,7 +11,6 @@ end
 telescope.setup()
 
 -- Keymaps for find and grep
-local keymap = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
+local keymap, opts = require "utils".setup()
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>gg", ":Telescope live_grep<CR>", opts)

@@ -18,6 +18,5 @@ end
 open_nvim_tree()
 
 -- Toggles NvimTree
-local keymap = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
+local keymap, opts = require "utils".setup()
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
