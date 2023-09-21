@@ -17,6 +17,7 @@ name=$(basename $path | sed 's/^\.//')
 
 if ! tmux has-session -t=$name 2>/dev/null; then
 	tmux new-session -s $name -n code -c $path -d nvim
+	tmux new-window -t $name -n console -c $path
 	tmux new-window -t $name -n term -c $path
 	tmux attach -t $name:code
 fi
