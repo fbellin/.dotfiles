@@ -87,6 +87,11 @@ return packer.startup(function(use)
 	use { "hrsh7th/cmp-path" }
 	use { "hrsh7th/cmp-cmdline" }
 
+	-- Plugons for Svelte
+	use { "othree/html5.vim" }
+	use { "pangloss/vim-javascript" }
+	use { "evanleck/vim-svelte" }
+
 	-- Debugging features
 	use { "puremourning/vimspector" }
 

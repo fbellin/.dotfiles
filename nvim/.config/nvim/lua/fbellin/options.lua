@@ -22,7 +22,7 @@ local options = {
 	splitright = true,
 	splitbelow = true,
 
-	clipboard = "unnamedplus",
+	clipboard = "unnamed",
 	mouse = "a",
 
 	updatetime = 500
