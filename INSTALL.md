@@ -51,6 +51,10 @@ Then :
 
 nvm install stable
 
+Install pnpm 
+
+wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
+
 ## Rust install
 
 sudo apt install build-essential

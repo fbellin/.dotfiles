@@ -141,3 +141,11 @@ bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
 bind '"\eOQ":"tmuxify ~/src/github.com/app-stack/\n"'
 bind '"\eOR":"tmuxify ~/src/github.com/sdml/\n"'
 #bind '"\eOR":"tmuxify ~/sources/no-git/rust/training/\n"'
+
+# pnpm
+export PNPM_HOME="/home/fbellin/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
