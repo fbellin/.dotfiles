@@ -61,6 +61,9 @@ return packer.startup(function(use)
   		},
 		}
 
+	-- Buffer switcher
+	use "matbme/JABS.nvim"
+
 	-- Auto pairs plugin
 	use { "windwp/nvim-autopairs" }
 

@@ -1,8 +1,8 @@
-local status_ok, comment = pcall(require, 'nvim_comment')
+local status_ok, jabs = pcall(require, 'jabs')
 if not status_ok then
-	vim.notify('Error while loading nvim-comment plugin')
+	vim.notify('Error while loading jabs plugin')
 end
 
-comment.setup({
+jabs.setup({
 	line_mapping = "<leader>cl"
 })
