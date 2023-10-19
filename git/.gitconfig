@@ -28,3 +28,5 @@
 	helper = store --file ~/.gitcredentials
 [init]
 	defaultBranch = main
+[core]
+	editor = vi
