@@ -133,6 +133,8 @@ export PATH="$HOME/.deno/bin:$PATH"
 
 export PATH=$PATH:$HOME/.local/bin/
 
+export EDITOR=vi
+
 source ./.exa_colors
 
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'

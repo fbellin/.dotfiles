@@ -61,6 +61,9 @@ return packer.startup(function(use)
   		},
 		}
 
+	-- Buffer switcher
+	use "matbme/JABS.nvim"
+
 	-- Auto pairs plugin
 	use { "windwp/nvim-autopairs" }
 
@@ -73,7 +76,7 @@ return packer.startup(function(use)
 
 	-- Telescope
 	use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1'
+	  'nvim-telescope/telescope.nvim'
 	}
 
 	-- LSP and related plugins
