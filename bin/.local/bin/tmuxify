@@ -13,7 +13,8 @@ fi
 #--------------------------------------------
 # Starts tmux session
 
-name=$(basename $path | sed 's/^\.//')
+# First sed removes beginning dot in tmux session name. Second sed replaces dots by hyphens.
+name=$(basename $path | sed 's/^\.//' | sed 's/\./-/g')
 
 if ! tmux has-session -t=$name 2>/dev/null; then
 	tmux new-session -s $name -n code -c $path -d nvim
