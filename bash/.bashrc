@@ -130,7 +130,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$HOME/.deno/bin:$PATH"
-
 export PATH=$PATH:$HOME/.local/bin/
 
 export EDITOR=vi
@@ -139,6 +138,8 @@ source ./.exa_colors
 
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
 bind '"\eOQ":"tmuxify ~/src/github.com/recipes.js/\n"'
+bind '"\eOR":"tmuxify ~/src/github.com/material-ui/\n"'
+bind '"\eOS":"tmuxify ~/src/github.com/itmaster/\n"'
 
 # pnpm
 export PNPM_HOME="/home/fbellin/.local/share/pnpm"
