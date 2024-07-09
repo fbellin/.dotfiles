@@ -3,6 +3,11 @@ if not status_ok then
 	vim.notify('Error while loading jabs plugin')
 end
 
+-- Keymaps 
+local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+keymap("n", "<leader>ll", ":JABSOpen<CR>", opts)
+
 jabs.setup({
 	-- Options for the main window
     position = {'center', 'top'}, -- position = {'<position_x>', '<position_y>'} | <position_x> left, center, right,
@@ -70,7 +75,3 @@ jabs.setup({
     use_devicons = false -- true or false. Default true
 })
 
--- Keymaps 
-local keymap = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
-keymap("n", "<leader>b", ":JABSOpen<CR>", opts)
