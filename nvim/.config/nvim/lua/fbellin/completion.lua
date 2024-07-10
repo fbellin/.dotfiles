@@ -18,7 +18,7 @@ cmp.setup({
     entries = 'custom',
   },
 	mapping = cmp.mapping.preset.insert({
-		['<Tab>'] = function(fallback)
+		['<S-Tab>'] = function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
 			else
