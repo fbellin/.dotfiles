@@ -20,3 +20,4 @@ open_nvim_tree()
 -- Toggles NvimTree
 local keymap, opts = require "utils".setup()
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<C-r>", ":NvimTreeRefresh<CR>", opts)
