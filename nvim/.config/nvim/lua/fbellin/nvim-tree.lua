@@ -15,7 +15,7 @@ local function open_nvim_tree()
 	nvim_tree_api.tree.open()
 end
 
-open_nvim_tree()
+-- open_nvim_tree()
 
 -- Toggles NvimTree
 local keymap, opts = require "utils".setup()

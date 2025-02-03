@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/nvimdev/dashboard-nvim"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/home/fbellin/.local/share/nvim/site/pack/packer/start/diffview.nvim",

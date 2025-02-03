@@ -50,6 +50,9 @@ return packer.startup(function(use)
 	-- Themes and color scheme management
 	use "fenetikm/falcon"
 
+	-- Splashscreen
+	use { 'nvimdev/dashboard-nvim' }
+
 	-- Airline
 	use "vim-airline/vim-airline"     -- used for falcon theme
 
