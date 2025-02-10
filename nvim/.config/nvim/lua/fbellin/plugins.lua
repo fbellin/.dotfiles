@@ -118,6 +118,16 @@ return packer.startup(function(use)
 	-- CSV
 	use('mechatroner/rainbow_csv')
 
+	-- YAML
+	use {
+  "cuducos/yaml.nvim",
+  ft = { "yaml" }, -- optional
+  requires = {
+    "nvim-treesitter/nvim-treesitter",
+    "nvim-telescope/telescope.nvim" -- optional
+  },
+}
+
 	-- Debugging features
 	use { "puremourning/vimspector" }
 
