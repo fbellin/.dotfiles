@@ -113,20 +113,20 @@ return packer.startup(function(use)
     config = function()
         require('render-markdown').setup({})
     end,
-})
+	})
 
 	-- CSV
 	use('mechatroner/rainbow_csv')
 
 	-- YAML
 	use {
-  "cuducos/yaml.nvim",
-  ft = { "yaml" }, -- optional
-  requires = {
-    "nvim-treesitter/nvim-treesitter",
-    "nvim-telescope/telescope.nvim" -- optional
-  },
-}
+  	"cuducos/yaml.nvim",
+  	ft = { "yaml" }, -- optional
+  	requires = {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-telescope/telescope.nvim" -- optional
+ 		},
+	}
 
 	-- Debugging features
 	use { "puremourning/vimspector" }

@@ -14,3 +14,16 @@ require "fbellin.vimspector"
 require "fbellin.buffers"
 require "fbellin.snippets"
 require "fbellin.dashboard"
+
+vim.opt.clipboard = "unnamedplus"
+vim.g.clipboard = {
+  name = "WslClipboard",
+  copy = {
+    ["+"] = "clip.exe",
+    ["*"] = "clip.exe",
+  },
+  paste = {
+    ["+"] = "powershell.exe Get-Clipboard | tr -d '\r'",
+    ["*"] = "powershell.exe Get-Clipboard | tr -d '\r'",
+  },
+}

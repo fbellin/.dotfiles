@@ -10,8 +10,8 @@ vim.api.nvim_set_hl(0, "DashboardCenterText", { fg = "#ffc552", bold = true })
 local menu = {
     { "󰆧", "Update Packages", "u", ":PackerUpdate" },
     { "", "New file", "n", ":ene | startinsert" },
-    { " ", "Find files", "f", ":Telescope find_files"},
-    { " ", "Live Grep", "g", ":Telescope live_grep" },
+    { "", "Find files", "f", ":Telescope find_files"},
+    { "", "Live Grep", "g", ":Telescope live_grep" },
 		{ "", "Git log", "s", ":Telescope git_status" },
     { "", "Recently used files", "r", ":Telescope oldfiles" },
     { "", "Quit Neovim", "q", ":qa" }

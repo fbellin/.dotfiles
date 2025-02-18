@@ -22,7 +22,7 @@ local options = {
 	splitright = true,
 	splitbelow = true,
 
-	clipboard = "unnamed",
+	clipboard = "unnamedplus",
 	mouse = "a",
 
 	updatetime = 500
@@ -35,4 +35,16 @@ end
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
+
+vim.g.clipboard = {
+  name = "WslClipboard",
+  copy = {
+    ["+"] = "clip.exe",
+    ["*"] = "clip.exe",
+  },
+  paste = {
+    ["+"] = "powershell.exe Get-Clipboard | tr -d '\r'",
+    ["*"] = "powershell.exe Get-Clipboard | tr -d '\r'",
+  },
+}
 
