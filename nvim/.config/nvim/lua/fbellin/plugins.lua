@@ -84,8 +84,8 @@ return packer.startup(function(use)
 
 	-- LSP and related plugins
 	use { "neovim/nvim-lspconfig" }
-	use { "williamboman/mason.nvim" }
-	use { "williamboman/mason-lspconfig.nvim" }
+	use { "mason-org/mason.nvim" }
+	use { "mason-org/mason-lspconfig.nvim" }
 	use { "jose-elias-alvarez/null-ls.nvim" }
 	use { "hrsh7th/nvim-cmp" }
 	use { "hrsh7th/cmp-nvim-lsp" }

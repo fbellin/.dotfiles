@@ -9,9 +9,9 @@
         "stopOnEntry": true,
         "console": "integratedTerminal",
 				"runtimeExecutable": "~/.deno/bin/deno",
-				"runtimeArgs": [ "run", "--inspect-brk=127.0.0.1:9229" ],
+        "cwd": "${workspaceFolder}",
+				"runtimeArgs": [ "run", "--allow-all", "--inspect-brk=127.0.0.1:9229" ],
         "program": "${file}",
-        "cwd": "${workspaceRoot}",
 				"port": 9229
       }
 		}
