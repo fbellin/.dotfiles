@@ -126,7 +126,8 @@ test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)"
 
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$HOME/.deno/bin:$PATH"
-export PATH=$PATH:$HOME/bin/
+export PATH=$PATH:$HOME/bin/:$HOME/.local/bin
+export PATH=$PATH:/opt/nvim-linux-x86_64/bin/
 
 export EDITOR=vi
 
