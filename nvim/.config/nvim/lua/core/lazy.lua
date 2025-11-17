@@ -16,15 +16,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Configuration de lazy.nvim et importation du répertoire `plugins`
-require("lazy").setup({
-  spec = {
-    -- import your plugins
-    { import = "plugins" },
-    { import = "plugins.lsp" },
+require("lazy").setup({ { import = "plugins" } }, {
+  -- désactive la pénible notification au démarrage
+  change_detection = {
+    notify = false,
   },
-  -- Configure any other settings here. See the documentation for more details.
-  --
-  -- automatically check for plugin updates
-  checker = { enabled = true },
+})
 
-  })
