@@ -14,4 +14,6 @@ alias ll='ls -al'
 
 export EDITOR=vi
 
+export PATH=$PATH:~/bin
+
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
