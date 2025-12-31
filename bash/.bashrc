@@ -10,6 +10,7 @@ source ~/.local/share/omarchy/default/bash/rc
 
 # Aliases
 alias vi='nvim'
+alias ll='ls -al'
 
 export EDITOR=vi
 
