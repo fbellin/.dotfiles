@@ -1,0 +1,27 @@
+set -ga terminal-overrides ",xterm-256color*:Tc"
+
+# Rebinds prefix keyn binding from Ctrl-b to Ctrl-a
+set-option -g prefix C-a
+unbind-key C-b
+bind-key C-a send-prefix
+
+# Makes the mouse scroll on terminal, not in command history
+set -g mouse on
+# Utiliser le mode vi dans tmux
+set -g mode-keys vi
+
+# Set status line background to falcon color... should be working with the theme by the way...
+# set-option -g status-style bg=#ffc552
+# set-option -ag status-style fg=#444444
+source-file ./.falcon.tmux.conf
+
+# reload config file
+bind r source-file ~/.tmux.conf \; display ".tmux.conf reloaded!"
+
+# remaps basic controls
+bind Space choose-tree
+bind a select-window -t :=0
+bind z select-window -t :=1
+bind e select-window -t :=2
+bind x kill-server
+

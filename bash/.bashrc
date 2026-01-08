@@ -16,4 +16,6 @@ export EDITOR=vi
 
 export PATH=$PATH:~/bin
 
+ssh-add ~/.ssh/id_ed25519
+
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
