@@ -17,7 +17,7 @@ export EDITOR=vi
 export PATH=$PATH:~/bin
 
 bind '"\eOP":"tmuxify ~/.dotfiles/\n"'
-bind '"\eOQ":"tmuxify ~/src/git/hypermedia/\n"'
+bind '"\eOQ":"tmuxify ~/src/github.com/hypermedia/\n"'
 eval "$(direnv hook bash)"
 export LANG=fr_FR.UTF-8
 export LANGUAGE=fr_FR:fr

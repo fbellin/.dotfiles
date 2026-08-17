@@ -1,0 +1,48 @@
+# Configuration reload
+unbind r
+bind r source-file ~/.tmux.conf
+
+set -g prefix C-a
+
+set -g mouse on
+set -g default-terminal "tmux-256color"
+
+set -g mode-keys vi
+
+# remaps basic controls
+
+bind Space choose-tree
+
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+bind a select-window -t :=0
+bind z select-window -t :=1
+bind e select-window -t :=2
+
+bind x kill-server
+
+# UI
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'catppuccin/tmux'
+
+set -g @catppuccin_flavor 'macchiato'
+set -g @catppuccin_window_status_style "rounded"
+
+set-option -g status-position top
+
+
+set -g @catppuccin_status_right_separator ""
+set -g @catppuccin_status_connect_separator "no" # yes, no
+
+set -g status-left ""
+set -g @catppuccin_window_text " #W"
+set -g @catppuccin_window_current_text " #W"
+
+set -g status-right "#{E:@catppuccin_status_application} "
+set -ag status-right "#{E:@catppuccin_status_session} "
+
+run '~/.tmux/plugins/tpm/tpm'
