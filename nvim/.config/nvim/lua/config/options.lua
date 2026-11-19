@@ -1,3 +1,4 @@
+require("config.remote_clipboard").setup()
 local opt = vim.opt -- raccourci pour un peu plus de concision
 
 -- numéros de ligne
